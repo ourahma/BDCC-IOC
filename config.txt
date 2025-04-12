@@ -1,0 +1,2 @@
+net.ourahma.ext.DaoImplV2
+net.ourahma.metier.MetierImpl
