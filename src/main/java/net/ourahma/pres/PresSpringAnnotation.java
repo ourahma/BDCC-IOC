@@ -9,7 +9,7 @@ public class PresSpringAnnotation {
         // créer les objet en se basant sur les components
         ApplicationContext applicationcontext =  new AnnotationConfigApplicationContext("net.ourahma");
 
-        IMetier metier = (IMetier) applicationcontext.getBean("metier");
+        IMetier metier = applicationcontext.getBean(IMetier.class);
         System.out.println("RES = "+metier.calculer());
     }
 }

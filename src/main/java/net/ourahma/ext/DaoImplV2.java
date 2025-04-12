@@ -2,8 +2,9 @@ package net.ourahma.ext;
 
 import net.ourahma.dao.IDao;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component("d2")
+@Repository("d2")
 public class DaoImplV2 implements IDao {
     @Override
     public double getData() {

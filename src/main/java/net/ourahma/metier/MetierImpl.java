@@ -4,8 +4,9 @@ import net.ourahma.dao.IDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component("metier")
+@Service("metier")
 public class MetierImpl implements IMetier {
     @Autowired
     @Qualifier("d")
@@ -20,12 +21,11 @@ public class MetierImpl implements IMetier {
      pour injecter dans la variable dao une classe qui implèmente l'interface IDao
      au moment de la création de l'objet
      */
-    public MetierImpl(IDao dao) {
+    public MetierImpl(@Qualifier("d") IDao dao) {
         this.dao = dao;
     }
 
-    public MetierImpl() {
-    }
+    //public MetierImpl() {}
 
     /*
      pour injecter dans la variable dao une classe qui implèmente l'interface IDao
