@@ -29,10 +29,10 @@ public class pres2 {
         // faire la meme chose pour l'objet matier
         String metierClassName = scanner.nextLine();
         Class cmetier = Class.forName(metierClassName);
-        //IMetier metier = (IMetier) cmetier.getConstructor(IDao.class).newInstance(dao);
-        IMetier metier = (IMetier) cmetier.getConstructor().newInstance();
+        IMetier metier = (IMetier) cmetier.getConstructor(IDao.class).newInstance(dao);
+        /*IMetier metier = (IMetier) cmetier.getConstructor().newInstance();
         Method setDao = cmetier.getMethod("setDao", IDao.class);
-        setDao.invoke(metier, dao);
+        setDao.invoke(metier, dao);*/
         System.out.println("RES = " + metier.calculer());
     }
 }

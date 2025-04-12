@@ -1,8 +1,14 @@
 package net.ourahma.metier;
 
 import net.ourahma.dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component("metier")
 public class MetierImpl implements IMetier {
+    @Autowired
+    @Qualifier("d")
     private IDao dao; // le fait de dépendre de l'interface et le couplage faible
     @Override
     public double calculer() {
