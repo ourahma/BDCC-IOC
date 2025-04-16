@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean id="d" class="net.ourahma.dao.DaoImpl"></bean>
     <bean id="metier" class="net.ourahma.metier.MetierImpl">
-        <!--property name="dao" ref="d"></property-->
-        <constructor-arg ref="d"></constructor-arg>
+        <property name="dao" ref="d"></property>
+        <!-- <constructor-arg ref="d"></constructor-arg> -->
     </bean>
 </beans>

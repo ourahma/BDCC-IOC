@@ -13,7 +13,7 @@ public class pres2 {
     // FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException 
     public static void main(String[] args) throws Exception{
         // lire le fichier
-        Scanner scanner = new Scanner(new File("config.txt"));
+        Scanner scanner = new Scanner(System.in);
 
         //lire le nom de la classe
         String docClassName = scanner.nextLine();
