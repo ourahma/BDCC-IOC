@@ -39,7 +39,7 @@ Transformation du projet pour utiliser **Spring** et appliquer le principe SOLID
 
 La conception (diagramme de classe )de projet en utilisant le logiciel `Entreprise architect` :
 
-![Diagramme de conception](diagclasse.png)
+![Diagramme de conception](captures/conception.png)
 
 
 ## **4- Code source**
